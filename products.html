@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Wines | Wine World Premium Collection</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore our curated collection of luxury wines. Filter through our hand-selected Reds, Whites, and Rosés, with detailed pricing and descriptions.">
+  <meta name="keywords" content="wine catalog, buy cabernet sauvignon, premium chardonnay, luxury rosé wine">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Header Navigation Bar -->
+  <header id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="index.html" class="logo" id="brand-logo">
+        WINE <span>WORLD</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="products.html" class="nav-link active">Products</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+
+      <button class="hamburger" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- 2. Inner Page Hero Banner -->
+  <section class="inner-hero" aria-label="Products Page Banner">
+    <img src="slide3.png" alt="Pouring red wine into a glass against a dark background">
+    <div class="inner-hero-content">
+      <h1>Our Collection</h1>
+      <p>Hand-Crafted Luxury Vintages</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- 3. Products Filter & Grid Section -->
+    <section class="products-section section-padding container" aria-labelledby="products-heading">
+      <div class="section-title">
+        <h2 id="products-heading">Explore Our Selection</h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="products-filter" aria-label="Filter products by category">
+        <button class="filter-btn active" data-filter="all">All Vintages</button>
+        <button class="filter-btn" data-filter="red">Red Wines</button>
+        <button class="filter-btn" data-filter="white">White Wines</button>
+        <button class="filter-btn" data-filter="rose">Rosé Wines</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
+        
+        <!-- Product 1: Cabernet Sauvignon -->
+        <article class="product-card" data-category="red">
+          <div class="product-image-wrapper">
+            <img src="wine1.png" alt="Cabernet Sauvignon Reserve bottle">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Red Wine</span>
+            <h3 class="product-title">Cabernet Sauvignon Reserve</h3>
+            <p class="product-desc">A bold red boasting notes of dark blackberry, rich cocoa, and toasted French oak. Perfect for structured pairings.</p>
+            <div class="product-meta">
+              <span class="product-price">$85.00</span>
+              <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem; letter-spacing: 1px;">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: Chardonnay Premium -->
+        <article class="product-card" data-category="white">
+          <div class="product-image-wrapper">
+            <img src="wine2.png" alt="Chardonnay Premium Reserve bottle">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">White Wine</span>
+            <h3 class="product-title">Chardonnay Premium</h3>
+            <p class="product-desc">A bright white wine balancing crisp green apple acidity with a creamy vanilla butterscotch finish.</p>
+            <div class="product-meta">
+              <span class="product-price">$65.00</span>
+              <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem; letter-spacing: 1px;">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: Valley Rosé -->
+        <article class="product-card" data-category="rose">
+          <div class="product-image-wrapper">
+            <img src="wine3.svg" alt="Valley Rosé bottle">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Rosé Wine</span>
+            <h3 class="product-title">Valley Rosé</h3>
+            <p class="product-desc">An elegant and refreshing Rosé wine featuring aromas of wild strawberry, peach blossom, and a clean mineral dry finish.</p>
+            <div class="product-meta">
+              <span class="product-price">$55.00</span>
+              <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem; letter-spacing: 1px;">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: Pinot Noir Classic -->
+        <article class="product-card" data-category="red">
+          <div class="product-image-wrapper">
+            <img src="wine4.png" alt="Pinot Noir Classic bottle">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Red Wine</span>
+            <h3 class="product-title">Pinot Noir Classic</h3>
+            <p class="product-desc">A highly aromatic red featuring ripe cherry, woodland earth, and soft hints of cinnamon and clove.</p>
+            <div class="product-meta">
+              <span class="product-price">$75.00</span>
+              <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem; letter-spacing: 1px;">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5: Sauvignon Blanc -->
+        <article class="product-card" data-category="white">
+          <div class="product-image-wrapper">
+            <img src="wine5.png" alt="Sauvignon Blanc Estate bottle">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">White Wine</span>
+            <h3 class="product-title">Sauvignon Blanc</h3>
+            <p class="product-desc">Vibrant and citrus-forward, filled with notes of lemongrass, passionfruit, and wet stone minerality.</p>
+            <div class="product-meta">
+              <span class="product-price">$60.00</span>
+              <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem; letter-spacing: 1px;">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6: Rosé D'Amour -->
+        <article class="product-card" data-category="rose">
+          <div class="product-image-wrapper">
+            <img src="wine3.svg" alt="Rosé D'Amour bottle">
+          </div>
+          <div class="product-info">
+            <span class="product-tag">Rosé Wine</span>
+            <h3 class="product-title">Rosé D'Amour</h3>
+            <p class="product-desc">A delicate and fragrant Rosé, blending fresh pomegranate and raspberry notes with a trace of orange peel.</p>
+            <div class="product-meta">
+              <span class="product-price">$58.00</span>
+              <button class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.75rem; letter-spacing: 1px;">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- 4. Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>WINE <span>WORLD</span></h3>
+        <p>Exquisite wines crafted from the finest grapes. Celebrating history, taste, and the art of wine-making since 1996.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook">FB</a>
+          <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+          <a href="#" class="social-icon" aria-label="Twitter">TW</a>
+          <a href="#" class="social-icon" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Our Wines</a></li>
+          <li><a href="gallery.html">The Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Opening Hours</h4>
+        <ul class="footer-links" style="font-size: 0.9rem; color: rgba(250, 245, 235, 0.7);">
+          <li style="margin-bottom: 0.8rem;">Mon - Fri: 10:00 - 18:00</li>
+          <li style="margin-bottom: 0.8rem;">Saturday: 09:00 - 19:00</li>
+          <li style="margin-bottom: 0.8rem;">Sunday: 11:00 - 17:00</li>
+          <li style="margin-bottom: 0.8rem;">Tastings: By Appointment</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Info</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>128 Vineyard Estate Road, Sonoma Valley, CA</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+1 (800) 555-WINE</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>reserve@wineworld.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Wine World. All Rights Reserved. Designed as a Web Development College Internship Project.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
